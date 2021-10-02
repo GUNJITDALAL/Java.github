@@ -1,0 +1,13 @@
+
+public class Variable {
+
+	public static void main(String[] args) {
+		double num=10.0;
+		System.out.println(num);
+		boolean check=false;
+		System.out.println(check);
+		// TODO Auto-generated method stub
+
+	}
+
+}
