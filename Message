@@ -1,0 +1,22 @@
+class Display
+{
+	void displayMessage()
+	{
+		System.out.println("This is second class");
+	}
+}
+public class Message {
+
+	public static void main(String[] args) {
+		Display d1=new Display();
+		d1.displayMessage();
+		Display d2;
+		//d2.displayMessage();
+		d2=new Display();
+		
+		new Display().displayMessage();
+		// TODO Auto-generated method stub
+
+	}
+
+}
