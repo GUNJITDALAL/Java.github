@@ -1,0 +1,39 @@
+// poly+morph
+//poly=many or multiple 
+// morph=form
+//polymorphism:ability of object to form multiple form
+//two types of polymorpism :
+          // 1.compile time:Method Overloading
+          // 2.Runtime :Method Overriding
+//upcasting and Downcasting(java does not support downcasting)
+class AA
+{
+	void displayA()
+	{
+		System.out.println("I am in A class display method");
+		
+	}
+}
+class BB extends AA
+{
+	void displayA()
+	{
+		System.out.println("I am in B class display method");
+		
+	}
+}
+public class PolymorphismEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		AA a1=new AA();
+		a1.displayA();
+		BB b1=new BB();
+		b1.displayA();
+		AA a2=new BB();//upcasting
+		a2.displayA();
+		BB b2=(BB)new AA();//downcasting
+
+	}
+
+}
