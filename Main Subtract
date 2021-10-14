@@ -1,0 +1,31 @@
+class Subtract
+{
+	int num1,num2;
+	Subtract(int num1, int num2)
+	{
+		this.num1=num1;
+		this.num2=num2;
+	}
+	Subtract()
+	{
+		this.num1=12;
+		this.num2=8;
+	}
+	void getSubtraction()
+	{
+		int sub=num1-num2;
+		System.out.println("Subtraction of two number is ="+sub);
+	}
+}
+public class MainSubtract {
+
+	public static void main(String[] args) {
+		Subtract s1 = new Subtract(32,23);
+		s1.getSubtraction();
+		Subtract s2=new Subtract();
+		s2.getSubtraction();
+		// TODO Auto-generated method stub
+
+	}
+
+}
